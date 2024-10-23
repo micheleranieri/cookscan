@@ -32,17 +32,28 @@ p {
 }
 
 .page-content {
-    margin-left: 15%; /* Imposta il margine sinistro per corrispondere alla sidebar */
+    margin-left: 15%; 
 }
 
 @media (max-width: 720px) {
     .page-content {
-        margin-left: 15%; /* Mantieni il margine sinistro al 12% per schermi più piccoli */
+        margin-left: 15%; 
     }
 }
 
 @media (max-width: 540px) {
     .page-content {
-        margin-left: 15%; /* Mantieni il margine sinistro al 12% per schermi molto piccoli */
+        margin-left: 15%; 
     }
+    .card-two img {
+        margin-top: 70px; 
+    }
+    .banner {
+        background-size: cover;
+        background-position: center center; /* Centra il background */
+        margin-right: 0; /* Elimina il margine a destra */
+        width: 120%;
+    }
+
+
 }
