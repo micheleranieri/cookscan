@@ -1,0 +1,167 @@
+.card-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    height: auto;
+}
+
+.card-one h3 {
+    color: #EC6334;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 8px;
+}
+
+.card-one a {
+    background-color: #EC6334;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card-one a:hover {
+    background-color: #D54D2B;
+}
+
+.card-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center; 
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 750px; /* Aumenta la larghezza della card-two */
+    margin: 0 auto 30px auto;
+    height: auto;
+    position: relative;
+}
+
+.card-two h3 {
+    color: #EC6334;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    text-align: center;
+    position: absolute; 
+    top: 26px; 
+    z-index: 1; 
+    background-color:transparent; 
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.card-two img {
+    width: 150px; 
+    height: auto;
+    display: block;
+    margin: 50px auto 20px auto; 
+    border-radius: 8px;
+}
+
+
+
+.card-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.card-three h3 {
+    color: #EC6334; /* Assicurati che il colore del titolo sia arancione */
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+.card-three img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.card-three a {
+    background-color: #EC6334;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card-three a:hover {
+    background-color: #D54D2B;
+}
+
+
+.card-one, .card-two, .card-three {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3); 
+}
+
+.card-one:hover, .card-two:hover, .card-three:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.4); 
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.card-one {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.card-two {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    max-width: 81%;
+    width: 100%;
+}
+
+.card-three {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    max-width: 92%;
+    width: 100%;
+}
+
+
